@@ -18,7 +18,8 @@ class SaveDataController extends Controller
         $totalContador = round(($cuantosVan * 100)/$total->valor,0,PHP_ROUND_HALF_UP);
         $responseData = array(
             "name"=>"porcentaje",
-            "value"=>$totalContador
+            "value"=>$totalContador,
+            "cuantosVan"=>$cuantosVan
         );
         return $responseData;
     }
