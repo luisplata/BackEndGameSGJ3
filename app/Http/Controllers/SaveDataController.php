@@ -30,7 +30,10 @@ class SaveDataController extends Controller
         }
         $count = new Count();
         $count->save();
-        return "Ok";
+        $response = array(
+            "status"=>"Ok"
+        );
+        return $response;
     }
 
     public function GetConf(Request $request, $name){
