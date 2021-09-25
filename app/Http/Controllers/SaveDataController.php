@@ -19,7 +19,7 @@ class SaveDataController extends Controller
         $responseData = array(
             "name"=>"porcentaje",
             "value"=>$totalContador,
-            "cuantosVan"=>$cuantosVan
+            "count"=>$cuantosVan
         );
         return $responseData;
     }
