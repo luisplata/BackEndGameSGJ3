@@ -26,7 +26,10 @@ class SaveDataController extends Controller
     public function SaveData(Request $request, $password){
         $configuration = Config::where("nombre","palabraSecreta")->firstOrFail();
         if($password != $configuration->valor){
-            return response('mal, te pille!', 500);
+            $response = array(
+                "status"=>"Te pille"
+            );
+            return response($response, 500);
         }
         $count = new Count();
         $count->save();

@@ -22,12 +22,17 @@ class Configuration extends Seeder
 
         $UrlCinematicaFinal = new Config;
         $UrlCinematicaFinal->nombre = "url_cinematica_final";
-        $UrlCinematicaFinal->valor = "https://www.youtube.com/watch?v=jxtkZCg2Zsc";
+        $UrlCinematicaFinal->valor = "https://museocarmona.com/img/info/notasyvideos/videos/one.mp4";
         $UrlCinematicaFinal->save();
+
+        $UrlCinematicaFinalAlter = new Config;
+        $UrlCinematicaFinalAlter->nombre = "url_cinematica_final_alter";
+        $UrlCinematicaFinalAlter->valor = "https://museocarmona.com/img/info/notasyvideos/videos/one.mp4";
+        $UrlCinematicaFinalAlter->save();
         
         $UrlCinematicaInicial = new Config;
         $UrlCinematicaInicial->nombre = "url_cinematica_inicial";
-        $UrlCinematicaInicial->valor = "https://www.youtube.com/watch?v=4HpC--2iowE&t=947s";
+        $UrlCinematicaInicial->valor = "https://museocarmona.com/img/info/notasyvideos/videos/one.mp4";
         $UrlCinematicaInicial->save();
 
         $palabraSecreta = new Config;
